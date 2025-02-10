@@ -2,7 +2,7 @@ name: "Airtub UDP Add-on"
 version: "1.0.0"
 slug: "airtub_udp_addon"
 description: "An add-on to run the Airtub UDP custom component."
-url: "https://github.com/zenz/airtub_ha_reader"
+url: "https://github.com/zenz/ha_airtub_partner_addon/airtub_udp_addon"
 arch:
   - amd64
   - armv7
