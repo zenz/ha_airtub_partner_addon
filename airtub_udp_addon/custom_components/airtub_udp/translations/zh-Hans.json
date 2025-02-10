@@ -1,0 +1,64 @@
+{
+    "title": "雅图伴侣",
+    "config": {
+        "flow_title": "配置雅图伴侣",
+        "step": {
+            "user": {
+                "title": "配置雅图伴侣",
+                "description": "请填写以下字段以配置您的设备：",
+                "data": {
+                    "device": "设备序列号",
+                    "password": "设备密码",
+                    "mode": "采暖模式"
+                }
+            }
+        },
+        "abort": {
+            "already_configured": "设备已经配置过了"
+        }
+    },
+    "options": {
+        "step": {
+            "user": {
+                "title": "配置雅图伴侣",
+                "description": "重新配置雅图伴侣采暖模式",
+                "data": {
+                    "mode": "采暖模式"
+                }
+            }
+        }
+    },
+    "selector": {
+        "mode": {
+            "options": {
+                "auto": "自动[室温]",
+                "manual": "手动[水温]"
+            }
+        }
+    },
+    "services": {
+        "sender": {
+            "name": "发送命令到雅图伴侣",
+            "description": "发送命令到雅图伴侣",
+            "fields": {
+                "cmd": {
+                    "name": "命令",
+                    "description": "要发送的命令"
+                }
+            }
+        }
+    },
+    "entity": {
+        "climate": {
+            "ch_auto_control": {
+                "name": "采暖控制[室温]"
+            },
+            "ch_man_control": {
+                "name": "采暖控制[水温]"
+            },
+            "dhw_control": {
+                "name": "生活热水控制"
+            }
+        }
+    }
+}

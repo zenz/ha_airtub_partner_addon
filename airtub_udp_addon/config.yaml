@@ -1,0 +1,15 @@
+name: "Airtub UDP Add-on"
+version: "1.0.0"
+slug: "airtub_udp_addon"
+description: "An add-on to run the Airtub UDP custom component."
+url: "https://github.com/zenz/airtub_ha_reader"
+arch:
+  - amd64
+  - armv7
+  - armhf
+startup: application
+boot: auto
+hassio_api: true
+homeassistant_api: true
+options: {}
+schema: {}

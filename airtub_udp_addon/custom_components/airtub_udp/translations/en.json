@@ -1,0 +1,64 @@
+{
+    "title": "Airtub Partner",
+    "config": {
+        "flow_title": "Airtub Configuration",
+        "step": {
+            "user": {
+                "title": "Configure Airtub",
+                "description": "Please enter the following fields to configure your device:",
+                "data": {
+                    "device": "Device Serial",
+                    "password": "Device Password",
+                    "mode": "Heating Mode"
+                }
+            }
+        },
+        "abort": {
+            "already_configured": "Device is already configured"
+        }
+    },
+    "options": {
+        "step": {
+            "user": {
+                "title": "Configure Airtub",
+                "description": "Please configure your device:",
+                "data": {
+                    "mode": "Heating Mode"
+                }
+            }
+        }
+    },
+    "selector": {
+        "mode": {
+            "options": {
+                "auto": "Automatic[Room Temp]",
+                "manual": "Manual[Water Temp]"
+            }
+        }
+    },
+    "services": {
+        "sender": {
+            "name": "Send Command to Airtub Partner",
+            "description": "Send command(s) to the Airtub Partner",
+            "fields": {
+                "cmd": {
+                    "name": "Command(s)",
+                    "description": "Command(s) to send"
+                }
+            }
+        }
+    },
+    "entity": {
+        "climate": {
+            "ch_auto_control": {
+                "name": "Heating[Room Temp]"
+            },
+            "ch_man_control": {
+                "name": "Heating[Water Temp]"
+            },
+            "dhw_control": {
+                "name": "Domestic Hot Water"
+            }
+        }
+    }
+}
